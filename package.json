@@ -10,7 +10,9 @@
     "start-server": "json-server --watch src/server/db.json --routes src/server/routes.json --middlewares src/server/middleware/conversations.js --port 3005",
     "test": "jest",
     "lint": "next lint --no-error-on-unmatched-pattern",
-    "check": "tsc --noEmit && eslint . && prettier --write . && jest"
+    "lint:fix": "eslint . --fix",
+    "check": "tsc --noEmit && eslint . && prettier --write . && jest",
+    "check:fix": "tsc --noEmit && eslint . --fix && prettier --write . && jest"
   },
   "engines": {
     "node": ">=14.17.2"
