@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledHeaderContainer = styled.header`
   background-color: ${({ theme }) => theme.colors.white};
@@ -25,7 +25,7 @@ const StyledHeaderMenu = styled.nav`
   gap: ${({ theme }) => theme.sizes[4]};
 `;
 
-const StyledHeaderMenuItem = styled.a`
+const StyledHeaderMenuItem = styled.a<{ $isActive: boolean }>`
   background-color: ${({ theme }) => theme.colors.transparent};
   border-radius: ${({ theme }) => theme.radii.md};
   color: inherit;
@@ -34,13 +34,23 @@ const StyledHeaderMenuItem = styled.a`
   text-decoration: none;
   transition: background-color 150ms ease;
 
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.gray['200']};
-  }
+  ${({ $isActive }) =>
+    $isActive
+      ? css`
+          background-color: ${({ theme }) => theme.colors.orange['100']};
+          color: ${({ theme }) => theme.colors.orange[800]};
+        `
+      : css`
+          &:hover {
+            background-color: ${({ theme }) => theme.colors.gray['200']};
+            color: inherit;
+          }
 
-  &:active {
-    background-color: ${({ theme }) => theme.colors.gray['100']};
-  }
+          &:active {
+            background-color: ${({ theme }) => theme.colors.gray['100']};
+            color: inherit;
+          }
+        `}
 
   /* Adding cursor just works: */
   &[aria-disabled='true'] {
