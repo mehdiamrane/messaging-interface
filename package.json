@@ -10,17 +10,20 @@
     "start-server": "json-server --watch src/server/db.json --routes src/server/routes.json --middlewares src/server/middleware/conversations.js --port 3005",
     "test": "jest",
     "lint": "next lint --no-error-on-unmatched-pattern",
+    "lint:css": "stylelint './src/**/*.style.ts'",
     "lint:fix": "eslint . --fix",
-    "check": "tsc --noEmit && eslint . && prettier --write . && jest",
-    "check:fix": "tsc --noEmit && eslint . --fix && prettier --write . && jest"
+    "check": "tsc --noEmit && stylelint './src/**/*.style.ts' && eslint . && prettier --write . && jest",
+    "check:fix": "tsc --noEmit && stylelint './src/**/*.style.ts' && eslint . --fix && prettier --write . && jest"
   },
   "engines": {
     "node": ">=14.17.2"
   },
   "dependencies": {
-    "next": "^11.1.0",
+    "next": "^12.1.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.5",
+    "styled-reset": "^4.3.4"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.1.0",
@@ -29,8 +32,10 @@
     "@types/node": "^16.6.1",
     "@types/react": "^17.0.18",
     "@types/react-dom": "^18.0.1",
+    "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "babel-jest": "^27.0.6",
+    "babel-plugin-styled-components": "^2.0.7",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.0",
@@ -46,6 +51,10 @@
     "json-server": "^0.16.3",
     "prettier": "^2.6.2",
     "prettier-eslint": "^13.0.0",
+    "stylelint": "^14.7.1",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^4.3.5"
   },
   "config": {

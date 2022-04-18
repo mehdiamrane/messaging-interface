@@ -1,0 +1,12 @@
+**/node_modules
+**/dist
+**/package.json
+**/yarn.lock
+**/package-lock.json
+**/.eslintrc.js
+**/tsconfig.json
+**/.next
+**/src/__tests__
+**/src/server
+**/src/types
+**/src/utils
