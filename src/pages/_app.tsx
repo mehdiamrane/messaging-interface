@@ -1,6 +1,7 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
 
+import { appWithTranslation } from 'next-i18next';
 import { ThemeProvider } from 'styled-components';
 import theme from 'src/styles/theme';
 import GlobalStyle from 'src/styles/GlobalStyle';
@@ -23,4 +24,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

@@ -1,0 +1,11 @@
+{
+  "logo_alt": "Logo de Leboncoin",
+  "home": "Accueil",
+  "users": "Utilisateurs",
+  "settings": "Paramètres",
+  "title": {
+    "goTo": "Aller à la page $t({{name}})",
+    "disabled": "Lien désactivé, uniquement à des fins de démonstration"
+  },
+  "lbc": "Leboncoin"
+}
