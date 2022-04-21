@@ -15,17 +15,22 @@ const Header: FC = () => {
   return (
     <StyledHeader.Container>
       <StyledHeader.Inner>
-        <Image src={Logo} alt={t('logo_alt')} width={128} height={40} />
+        <NextLink passHref href='/'>
+          <a title={t('header.nav.links.home')}>
+            <Image src={Logo} alt={t('header.logo.alt')} width={128} height={40} />
+          </a>
+        </NextLink>
         <StyledHeader.Menu>
           {navLinks.map((navLink) => (
             <NextLink passHref href={navLink.url} key={navLink.key}>
               <StyledHeader.MenuItem
-                key={t(navLink.key)}
                 aria-disabled={navLink.disabled}
-                title={navLink.disabled ? t('title.disabled') : t('title.goTo', { name: navLink.key })}
-                $isActive={router.asPath === navLink.url}
+                title={
+                  navLink.disabled ? t('header.nav.title.disabled') : t('header.nav.title.goTo', { name: navLink.key })
+                }
+                $isCurrent={navLink.routes.includes(router.route)}
               >
-                {t(navLink.key)}
+                {t(`header.nav.links.${navLink.key}`)}
               </StyledHeader.MenuItem>
             </NextLink>
           ))}

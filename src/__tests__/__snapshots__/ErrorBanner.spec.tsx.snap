@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBanner should render correctly ErrorBanner 1`] = `<div />`;

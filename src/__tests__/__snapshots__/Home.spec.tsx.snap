@@ -1,9 +1,215 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home should render correctly Home 1`] = `
+.c0 {
+  display: initial;
+  width: 100%;
+}
+
+.c7 {
+  display: none;
+}
+
+.c1 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E2E8F0;
+  border: 1px solid #CBD5E0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 4rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c4 {
+  background-color: #E2E8F0;
+  border: 1px solid #CBD5E0;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E2E8F0;
+  border: 1px solid #CBD5E0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 4rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3 span {
+  color: #1A202C;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.c6 {
+  background-color: #bee3f8;
+  cursor: pointer;
+  -webkit-transition: border 150ms ease,background-color 150ms ease;
+  transition: border 150ms ease,background-color 150ms ease;
+}
+
+.c6:hover {
+  background-color: #90cdf4;
+  border: 1px solid #63b3ed;
+}
+
+.c6:active {
+  background-color: #bee3f8;
+  border: 1px solid #90cdf4;
+}
+
+.c6 span {
+  color: #1A365D;
+  font-size: 1.125rem;
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c9 {
+  background-color: rgba(0,0,0,0.04);
+  border: 2px solid rgba(0,0,0,0.24);
+  border-radius: 0.5rem;
+  color: rgba(0,0,0,0.48);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 24rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+@media (min-width:48em) {
+  .c0 {
+    display: initial;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 16rem;
+  }
+}
+
+@media (min-width:62em) {
+  .c0 {
+    width: 20rem;
+  }
+}
+
+@media (min-width:48em) {
+  .c7 {
+    display: initial;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+  }
+}
+
 <div>
-  <p>
-    lbc
-  </p>
+  <aside
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c3"
+      >
+        <span>
+          list.header.text
+        </span>
+      </div>
+      <div
+        class="c4"
+      />
+      <a
+        class="c5 c6"
+        title="list.footer.title"
+      >
+        <span>
+          list.footer.text
+        </span>
+      </a>
+    </div>
+  </aside>
+  <main
+    class="c7"
+  >
+    <div
+      class="c8"
+    >
+      <div
+        class="c9"
+      >
+        index.explainerText
+      </div>
+    </div>
+  </main>
 </div>
 `;

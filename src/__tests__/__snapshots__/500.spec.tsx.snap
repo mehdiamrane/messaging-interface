@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page500 should render correctly Page500 1`] = `
+.c0 {
+  display: initial;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c2 {
+  background-color: rgba(0,0,0,0.04);
+  border: 2px solid rgba(0,0,0,0.24);
+  border-radius: 0.5rem;
+  color: rgba(0,0,0,0.48);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 24rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+@media (min-width:48em) {
+  .c0 {
+    display: initial;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+  }
+}
+
+<div>
+  <main
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        error.500.text
+      </div>
+    </div>
+  </main>
+</div>
+`;

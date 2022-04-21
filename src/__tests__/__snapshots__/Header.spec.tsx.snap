@@ -53,8 +53,12 @@ exports[`Header should render correctly Header 1`] = `
   padding: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: background-color 150ms ease;
-  transition: background-color 150ms ease;
+  -webkit-transition: opacity 150ms ease,background-color 150ms ease;
+  transition: opacity 150ms ease,background-color 150ms ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3:hover {
@@ -68,34 +72,11 @@ exports[`Header should render correctly Header 1`] = `
 }
 
 .c3[aria-disabled='true'] {
-  color: #718096;
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .c3[aria-disabled='true']:active {
-  pointer-events: none;
-}
-
-.c4 {
-  background-color: transparent;
-  border-radius: 0.375rem;
-  color: inherit;
-  cursor: pointer;
-  padding: 0.5rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 150ms ease;
-  transition: background-color 150ms ease;
-  background-color: #FEEBC8;
-  color: #7B341E;
-}
-
-.c4[aria-disabled='true'] {
-  color: #718096;
-  cursor: not-allowed;
-}
-
-.c4[aria-disabled='true']:active {
   pointer-events: none;
 }
 
@@ -106,53 +87,50 @@ exports[`Header should render correctly Header 1`] = `
     <div
       class="c1"
     >
-      <span
-        style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+      <a
+        href="/"
+        title="header.nav.links.home"
       >
         <span
-          style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
         >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%2740%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
           <img
-            alt=""
-            aria-hidden="true"
-            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27128%27%20height=%2740%27/%3e"
-            style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            alt="header.logo.alt"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
           />
+          <noscript />
         </span>
-        <img
-          alt="logo_alt"
-          data-nimg="intrinsic"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-        />
-        <noscript />
-      </span>
+      </a>
       <nav
         class="c2"
       >
         <a
-          aria-disabled="true"
           class="c3"
-          href="/#"
-          title="title.disabled"
-        >
-          home
-        </a>
-        <a
-          class="c4"
           href="/"
-          title="title.goTo"
+          title="header.nav.title.goTo"
         >
-          users
+          header.nav.links.home
         </a>
         <a
           aria-disabled="true"
           class="c3"
           href="/#"
-          title="title.disabled"
+          title="header.nav.title.disabled"
         >
-          settings
+          header.nav.links.messages
         </a>
       </nav>
     </div>

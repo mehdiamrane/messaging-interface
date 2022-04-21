@@ -33,7 +33,7 @@ const space = {
   80: '20rem',
   96: '24rem',
   headerHeight: '4rem',
-  footerHeight: '4rem',
+  footerHeight: '3rem',
   mainPadding: '1rem',
   appMaxWidth: '72rem',
 };

@@ -2,30 +2,52 @@ import React from 'react';
 import type { FC } from 'react';
 import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
+
+import { Conversation } from 'src/types/conversation';
+import { User } from 'src/types/user';
 
 import { useTranslation } from 'next-i18next';
+import Aside from 'src/components/layout/aside/Aside';
+import Main from 'src/components/layout/main/Main';
+import List from 'src/components/conversation/list/List';
 
-const Home: FC = () => {
+import { getConversationsByUserId } from 'src/services/api';
+import { getLoggedUserId } from 'src/utils/users';
+import InfoBox from 'src/components/shared/InfoBox/InfoBox';
+
+interface HomeProps {
+  users: User[];
+  conversations: Conversation[];
+}
+
+const Home: FC<HomeProps> = ({ conversations }) => {
   const { t } = useTranslation('common');
   return (
     <>
       <Head>
-        <title>Messaging Interface</title>
-        <meta name='description' content='Frontend exercise for developpers who want to join leboncoin'></meta>
+        <title>{t('index.meta.title')}</title>
+        <meta name='description' content={t('index.meta.description')}></meta>
       </Head>
-      <p>{t('lbc')}</p>
+      <Aside hideOnMobile={false}>
+        <List conversations={conversations} />
+      </Aside>
+      <Main hideOnMobile>
+        <InfoBox>{t('index.explainerText')}</InfoBox>
+      </Main>
     </>
   );
 };
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  const { data: conversations } = await getConversationsByUserId(getLoggedUserId());
+
   return {
     props: {
+      conversations,
       ...(await serverSideTranslations(locale, ['common'])),
-      // Will be passed to the page component as props
     },
   };
 };

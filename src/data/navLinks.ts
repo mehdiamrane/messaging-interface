@@ -1,22 +1,20 @@
 type NavLink = {
   key: string;
   url: string;
+  routes: string[];
   disabled?: boolean;
 };
 
 const navLinks: NavLink[] = [
   {
     key: 'home',
-    url: '#',
-    disabled: true,
-  },
-  {
-    key: 'users',
     url: '/',
+    routes: ['/'],
   },
   {
-    key: 'settings',
+    key: 'messages',
     url: '#',
+    routes: ['/conversation/[id]'],
     disabled: true,
   },
 ];

@@ -1,0 +1,88 @@
+{
+  "header": {
+    "logo": {
+      "alt": "Leboncoin's logo"
+    },
+    "nav": {
+      "links": {
+        "home": "Home",
+        "messages": "Messages",
+        "settings": "Settings"
+      },
+      "title": {
+        "goTo": "Go to $t(header.nav.links.{{name}}) page",
+        "disabled": "Link disabled, only for demo purposes"
+      }
+    }
+  },
+  "footer": {
+    "locale": {
+      "title": "Change the site language",
+      "en-US": "English",
+      "fr": "French"
+    }
+  },
+  "index": {
+    "meta": {
+      "title": "Your discussions",
+      "description": "Browse your current discussions on Leboncoin and send messages to other users."
+    },
+    "explainerText": "Hello, welcome to your messages dashboard! Click on a conversation to open it and send messages. You can also start a new discussion with another user."
+  },
+  "list": {
+    "header": {
+      "text": "Your discussions"
+    },
+    "item": {
+      "title": "Open conversation with {{name}}",
+      "avatar": {
+        "alt": "{{name}}'s profile picture"
+      }
+    },
+    "footer": {
+      "title": "Start a new discussion",
+      "text": "New discussion"
+    }
+  },
+  "conversation": {
+    "meta": {
+      "title": "{{name}} | Messages",
+      "description": "Browse and send messages to {{name}} on Leboncoin."
+    },
+    "emptyText": "You haven't sent any messages to {{name}} yet. Don't be shy, say hello!",
+    "header": {
+      "lastMessageTimestamp": {
+        "text": "Last message {{date}}",
+        "title": "{{date}}"
+      },
+      "backButton": {
+        "title": "Go back to discussions"
+      }
+    },
+    "form": {
+      "button": {
+        "label": "Send",
+        "title": "Send your message"
+      },
+      "input": {
+        "placeholder": "Type in your message"
+      }
+    }
+  },
+  "error": {
+    "banner": {
+      "close": {
+        "title": "Close this error banner"
+      },
+      "submitMessage": "An error occurred while sending your message."
+    },
+    "404": {
+      "title": "404 error",
+      "text": "Oops, this page cannot be found."
+    },
+    "500": {
+      "title": "500 error",
+      "text": "Oops, there was an error on our side, try again later."
+    }
+  }
+}

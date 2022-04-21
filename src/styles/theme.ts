@@ -1,4 +1,5 @@
 import breakpoints from './breakpoints';
+import devices from './devices';
 import colors from './colors';
 import radii from './radii';
 import shadows from './shadows';
@@ -8,6 +9,7 @@ import typography from './typography';
 
 const theme = {
   breakpoints,
+  devices,
   radii,
   colors,
   ...typography,

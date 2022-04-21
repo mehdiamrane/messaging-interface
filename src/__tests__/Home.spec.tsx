@@ -5,7 +5,7 @@ import 'jest-styled-components';
 
 describe('Home', () => {
   it('should render correctly Home', () => {
-    const { container } = render(<Home />);
+    const { container } = render(<Home users={[]} conversations={[]} />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from 'src/styles/theme';
 import GlobalStyle from 'src/styles/GlobalStyle';
 
-import Layout from 'src/components/layout/Layout';
+import Layout from 'src/components/layout/layout/Layout';
 
 import { getLoggedUserId } from '../utils/getLoggedUserId';
 

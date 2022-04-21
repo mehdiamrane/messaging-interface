@@ -5,7 +5,11 @@ import 'jest-styled-components';
 
 describe('Main', () => {
   it('should render correctly Main', () => {
-    const { container } = render(<Main />);
+    const { container } = render(
+      <Main>
+        <p>hello</p>
+      </Main>,
+    );
     expect(container).toMatchSnapshot();
   });
 });

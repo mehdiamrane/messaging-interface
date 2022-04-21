@@ -4,9 +4,13 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
-    background-color: ${({ theme }) => theme.colors.gray['100']};
-    color: ${({ theme }) => theme.colors.gray['800']};
+    background-color: ${({ theme }) => theme.colors.gray[100]};
+    color: ${({ theme }) => theme.colors.gray[800]};
     font-family: ${({ theme }) => theme.fonts.body};
   }
 

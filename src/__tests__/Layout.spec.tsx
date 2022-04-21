@@ -1,7 +1,7 @@
 import React from 'react';
 import { cleanup } from '@testing-library/react';
 import { render } from 'jest/utils';
-import Layout from 'src/components/layout/Layout';
+import Layout from 'src/components/layout/layout/Layout';
 import 'jest-styled-components';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter');

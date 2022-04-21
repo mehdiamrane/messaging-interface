@@ -1,11 +1,88 @@
 {
-  "logo_alt": "Logo de Leboncoin",
-  "home": "Accueil",
-  "users": "Utilisateurs",
-  "settings": "Paramètres",
-  "title": {
-    "goTo": "Aller à la page $t({{name}})",
-    "disabled": "Lien désactivé, uniquement à des fins de démonstration"
+  "header": {
+    "logo": {
+      "alt": "Logo de Leboncoin"
+    },
+    "nav": {
+      "links": {
+        "home": "Accueil",
+        "messages": "Messages",
+        "settings": "Paramètres"
+      },
+      "title": {
+        "goTo": "Aller à la page $t(header.nav.links.{{name}})",
+        "disabled": "Lien désactivé, uniquement à des fins de démonstration"
+      }
+    }
   },
-  "lbc": "Leboncoin"
+  "footer": {
+    "locale": {
+      "title": "Changer la langue du site",
+      "en-US": "Anglais",
+      "fr": "Français"
+    }
+  },
+  "index": {
+    "meta": {
+      "title": "Vos conversations",
+      "description": "Parcourez vos discussions en cours sur Leboncoin et envoyez des messages aux autres utilisateurs."
+    },
+    "explainerText": "Bonjour, bienvenue dans sur page de conversations ! Cliquez sur une conversation pour l'ouvrir et envoyer des messages. Vous pouvez également commencer une nouvelle discussion avec un autre utilisateur."
+  },
+  "list": {
+    "header": {
+      "text": "Vos conversations"
+    },
+    "item": {
+      "title": "Ouvrir la conversation avec {{name}}",
+      "avatar": {
+        "alt": "Photo de profil de {{name}}"
+      }
+    },
+    "footer": {
+      "title": "Commencer une nouvelle conversation",
+      "text": "Nouvelle conversation"
+    }
+  },
+  "conversation": {
+    "meta": {
+      "title": "{{name}} | Messages",
+      "description": "Parcourez et envoyez des messages à {{name}} sur Leboncoin."
+    },
+    "emptyText": "Vous n'avez pas encore envoyé de message à {{name}}. Ne soyez pas timide, dites-lui bonjour !",
+    "header": {
+      "lastMessageTimestamp": {
+        "text": "Dernier message {{date}}",
+        "title": "{{date}}"
+      },
+      "backButton": {
+        "title": "Retour aux conversations"
+      }
+    },
+    "form": {
+      "button": {
+        "label": "Envoyer",
+        "title": "Envoyer votre message"
+      },
+      "input": {
+        "placeholder": "Saisissez votre message"
+      }
+    }
+  },
+  "error": {
+    "banner": {
+      "close": {
+        "title": "Fermer le bandeau d'erreur"
+      },
+      "submitMessage": "Une erreur est survenue lors de l'envoi de votre message."
+    },
+    "404": {
+      "title": "Erreur 404",
+      "text": "Oops, la page est introuvable."
+    },
+    "500": {
+      "title": "Erreur 500",
+      "text": "Oops, il y a eu une erreur de notre côté, réessayez un peu plus tard."
+    }
+  }
 }

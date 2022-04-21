@@ -2,28 +2,29 @@
 
 exports[`Main should render correctly Main 1`] = `
 .c0 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-  min-height: calc(100% - 4rem - 4rem);
-  width: 100%;
+  display: initial;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
-.c1 {
-  margin: 0 auto;
-  max-width: 72rem;
-  padding: 2rem 1rem;
+@media (min-width:48em) {
+  .c0 {
+    display: initial;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+  }
 }
 
 <div>
   <main
     class="c0"
   >
-    <div
-      class="c1"
-    />
+    <p>
+      hello
+    </p>
   </main>
 </div>
 `;
