@@ -14,7 +14,6 @@ import { Message } from 'src/types/message';
 import { useTranslation } from 'next-i18next';
 import Aside from 'src/components/layout/aside/Aside';
 import Main from 'src/components/layout/main/Main';
-// import ErrorBanner from 'src/components/layout/errorBanner/ErrorBanner';
 import List from 'src/components/conversation/list/List';
 import MessagesBox from 'src/components/conversation/messagesBox/MessagesBox';
 
@@ -39,13 +38,11 @@ const ConversationPage: FC<ConversationProps> = ({ conversations, currentConvers
 
   useEffect(() => {
     return () => {
-      console.log('unmount');
       setLoading(true);
     };
   }, [currentConversation]);
 
   const getMessages = useCallback(async () => {
-    console.log('getting messages');
     const { data: messagesData } = await getMessagesByConversationId(currentConversation.id);
     setMessages(messagesData);
     setLoading(false);
@@ -96,18 +93,35 @@ export default ConversationPage;
 export const getServerSideProps: GetServerSideProps = async ({ params, locale }) => {
   const { id } = params;
 
-  const { data: conversations } = await getConversationsByUserId(getLoggedUserId());
+  try {
+    const { data: conversations } = await getConversationsByUserId(getLoggedUserId());
 
-  const currentConversation = conversations.find((conv) => conv.id === Number(id));
+    const currentConversation = conversations.find((conv) => conv.id === Number(id));
 
-  const otherUser = getOtherUserFromConversation(currentConversation);
+    if (!currentConversation) {
+      return {
+        notFound: true,
+      };
+    }
 
-  return {
-    props: {
-      otherUser,
-      conversations,
-      currentConversation,
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  };
+    const otherUser = getOtherUserFromConversation(currentConversation);
+
+    return {
+      props: {
+        otherUser,
+        conversations,
+        currentConversation,
+        ...(await serverSideTranslations(locale, ['common'])),
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        ...(await serverSideTranslations(locale, ['common'])),
+      },
+      redirect: {
+        destination: `/${locale}/500`,
+      },
+    };
+  }
 };

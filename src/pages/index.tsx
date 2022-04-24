@@ -42,12 +42,23 @@ const Home: FC<HomeProps> = ({ conversations }) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
-  const { data: conversations } = await getConversationsByUserId(getLoggedUserId());
+  try {
+    const { data: conversations } = await getConversationsByUserId(getLoggedUserId());
 
-  return {
-    props: {
-      conversations,
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  };
+    return {
+      props: {
+        conversations,
+        ...(await serverSideTranslations(locale, ['common'])),
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        ...(await serverSideTranslations(locale, ['common'])),
+      },
+      redirect: {
+        destination: `/${locale}/500`,
+      },
+    };
+  }
 };
