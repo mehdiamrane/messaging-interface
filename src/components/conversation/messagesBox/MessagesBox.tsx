@@ -13,7 +13,7 @@ import ChatBubble from '../chatBubble/ChatBubble';
 import { useRouter } from 'next/router';
 import { HiOutlineArrowLeft } from 'react-icons/hi';
 import NextLink from 'next/link';
-import { getLoggedUserId } from 'src/utils/getLoggedUserId';
+import { getLoggedUserId } from 'src/utils/users';
 
 interface MessagesBoxProps {
   conversation: Conversation;

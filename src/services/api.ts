@@ -7,14 +7,14 @@ const api = axios.create({
   baseURL: 'http://localhost:3005/',
 });
 
-export const getUsers = (): Promise<AxiosResponse<User[]>> => api.get<User[]>('/users');
+// export const getUsers = (): Promise<AxiosResponse<User[]>> => api.get<User[]>('/users');
 
-export const getUserById = (id: User['id']): Promise<AxiosResponse<User>> =>
-  api.get<User>('/users', {
-    params: {
-      id,
-    },
-  });
+// export const getUserById = (id: User['id']): Promise<AxiosResponse<User>> =>
+//   api.get<User>('/users', {
+//     params: {
+//       id,
+//     },
+//   });
 
 export const getConversationsByUserId = (userId: User['id']): Promise<AxiosResponse<Conversation[]>> =>
   api.get<Conversation[]>('/conversations', {

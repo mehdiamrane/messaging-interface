@@ -8,7 +8,7 @@ import GlobalStyle from 'src/styles/GlobalStyle';
 
 import Layout from 'src/components/layout/layout/Layout';
 
-import { getLoggedUserId } from '../utils/getLoggedUserId';
+import { getLoggedUserId } from '../utils/users';
 
 // Default way to get a logged user
 export const loggedUserId = getLoggedUserId();
