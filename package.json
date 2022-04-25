@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "start-server": "json-server --watch src/server/db.json --routes src/server/routes.json --middlewares src/server/middleware/conversations.js --port 3005",
+    "start-server:prod": "node src/server/server.js",
     "test": "jest",
     "lint": "next lint",
     "lint:css": "stylelint './src/**/*.style.ts'",
