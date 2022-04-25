@@ -51,6 +51,11 @@ const MessagesBox: FC<MessagesBoxProps> = ({
       if (value.trim().length === 0) {
         return;
       }
+      // Trigger a fake error when message includes 'error'
+      if (value.includes('error')) {
+        handleError(t('error.banner.submitMessage'));
+        return;
+      }
       const message: MessageSent = {
         timestamp: Date.now() / 1000,
         body: value,
@@ -61,9 +66,6 @@ const MessagesBox: FC<MessagesBoxProps> = ({
       postMessage(conversationId, message)
         .then(() => {
           fetchMessages();
-          if (value.includes('error')) {
-            handleError(t('error.banner.submitMessage'));
-          }
           setValue('');
         })
         .catch(() => handleError(t('error.banner.submitMessage')));
