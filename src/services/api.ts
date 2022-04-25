@@ -4,7 +4,7 @@ import { Conversation } from 'src/types/conversation';
 import { Message, MessageSent } from 'src/types/message';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3005/',
+  baseURL: process.env.BASE_API_URL,
 });
 
 // export const getUsers = (): Promise<AxiosResponse<User[]>> => api.get<User[]>('/users');
