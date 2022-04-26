@@ -13,6 +13,9 @@ describe('MessageForm', () => {
   it('should try to send a message', async () => {
     const onChange = jest.fn();
     const onSubmit = jest.fn();
+    onSubmit.mockImplementation((event) => {
+      event.preventDefault();
+    });
 
     render(<MessageForm onChange={onChange} onSubmit={onSubmit} value='' />);
 
