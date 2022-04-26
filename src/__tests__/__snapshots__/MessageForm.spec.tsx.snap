@@ -105,6 +105,7 @@ exports[`MessageForm should render correctly MessageForm 1`] = `
   >
     <input
       class="c1"
+      data-testid="messageform-input"
       minlength="1"
       placeholder="conversation.form.input.placeholder"
       required=""
@@ -112,6 +113,8 @@ exports[`MessageForm should render correctly MessageForm 1`] = `
     />
     <button
       class="c2"
+      data-testid="messageform-submit"
+      role="button"
       title="conversation.form.button.title"
       type="submit"
     >

@@ -679,6 +679,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
         >
           <div
             class="c20"
+            data-testid="chat-bubble"
           >
             <span
               class="c21"
@@ -693,6 +694,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
         >
           <div
             class="c23"
+            data-testid="chat-bubble"
           >
             <span
               class="c21"
@@ -716,6 +718,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
         >
           <input
             class="c27"
+            data-testid="messageform-input"
             minlength="1"
             placeholder="conversation.form.input.placeholder"
             required=""
@@ -723,6 +726,8 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
           />
           <button
             class="c28"
+            data-testid="messageform-submit"
+            role="button"
             title="conversation.form.button.title"
             type="submit"
           >
