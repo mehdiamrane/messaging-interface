@@ -78,7 +78,7 @@ const MessagesBox: FC<MessagesBoxProps> = ({
 
       setIsSubmitting(false);
     },
-    [value, conversationId, fetchMessages, handleError, t],
+    [value, conversationId, fetchMessages, handleError, t, isSubmitting, loading],
   );
 
   return (
