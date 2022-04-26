@@ -15,13 +15,19 @@ const MessageForm: FC<MessageFormProps> = ({ onChange, value, onSubmit }) => {
   return (
     <StyledMessageForm.Container onSubmit={onSubmit}>
       <StyledMessageForm.Input
+        data-testid='messageform-input'
         required
         value={value}
         onChange={onChange}
         minLength={1}
         placeholder={t('conversation.form.input.placeholder')}
       />
-      <StyledMessageForm.Button type='submit' title={t('conversation.form.button.title')}>
+      <StyledMessageForm.Button
+        data-testid='messageform-submit'
+        role='button'
+        type='submit'
+        title={t('conversation.form.button.title')}
+      >
         <StyledMessageForm.ButtonText>{t('conversation.form.button.label')}</StyledMessageForm.ButtonText>
         <HiPaperAirplane size='1.25rem' />
       </StyledMessageForm.Button>

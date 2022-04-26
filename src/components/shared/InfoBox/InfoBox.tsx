@@ -1,9 +1,14 @@
 import React, { FC } from 'react';
 import { StyledInfoBox } from './InfoBox.style';
 
-const InfoBox: FC = ({ children }) => {
+type InfoBoxProps = {
+  children: React.ReactNode | string;
+  'data-testid'?: string;
+};
+
+const InfoBox: FC<InfoBoxProps> = ({ children, 'data-testid': dataTestId }) => {
   return (
-    <StyledInfoBox.Container>
+    <StyledInfoBox.Container data-testid={dataTestId}>
       <StyledInfoBox.Inner>{children}</StyledInfoBox.Inner>
     </StyledInfoBox.Container>
   );

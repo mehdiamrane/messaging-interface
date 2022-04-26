@@ -36,6 +36,7 @@ const MessagesBox: FC<MessagesBoxProps> = ({
   const { locale } = useRouter();
 
   const [value, setValue] = useState<string>('');
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const sortedMessages = useMemo(() => sortMessages(messages), [messages]);
   const { lastMessageTimestamp, id: conversationId } = conversation;
@@ -48,14 +49,19 @@ const MessagesBox: FC<MessagesBoxProps> = ({
   const onSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      if (value.trim().length === 0) {
+
+      if (value.trim().length === 0 || loading || isSubmitting) {
         return;
       }
+
       // Trigger a fake error when message includes 'error'
       if (value.includes('error')) {
         handleError(t('error.banner.submitMessage'));
         return;
       }
+
+      setIsSubmitting(true);
+
       const message: MessageSent = {
         timestamp: Date.now() / 1000,
         body: value,
@@ -69,6 +75,8 @@ const MessagesBox: FC<MessagesBoxProps> = ({
           setValue('');
         })
         .catch(() => handleError(t('error.banner.submitMessage')));
+
+      setIsSubmitting(false);
     },
     [value, conversationId, fetchMessages, handleError, t],
   );
@@ -106,7 +114,7 @@ const MessagesBox: FC<MessagesBoxProps> = ({
                   $align={alignment}
                   key={message.id}
                 >
-                  <ChatBubble position={position} align={alignment}>
+                  <ChatBubble data-testid='chat-bubble' position={position} align={alignment}>
                     {message.body}
                   </ChatBubble>
                   {['single', 'last'].includes(position) ? (
@@ -119,8 +127,9 @@ const MessagesBox: FC<MessagesBoxProps> = ({
             })
           : null}
         {!loading && (!sortedMessages || sortedMessages.length === 0) ? (
-          <InfoBox>{t('conversation.emptyText', { name: nickname })}</InfoBox>
+          <InfoBox data-testid='infobox-empty'>{t('conversation.emptyText', { name: nickname })}</InfoBox>
         ) : null}
+        {loading ? <InfoBox data-testid='infobox-loading'>{t('conversation.loadingText')}</InfoBox> : null}
         <div ref={messagesEndRef} />
       </StyledMessagesBox.Inner>
 

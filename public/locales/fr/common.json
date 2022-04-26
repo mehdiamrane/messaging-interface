@@ -50,6 +50,7 @@
       "description": "Parcourez et envoyez des messages à {{name}} sur Leboncoin."
     },
     "emptyText": "Vous n'avez pas encore envoyé de message à {{name}}. Ne soyez pas timide, dites-lui bonjour !",
+    "loadingText": "Chargement...",
     "header": {
       "lastMessageTimestamp": {
         "text": "Dernier message {{date}}",

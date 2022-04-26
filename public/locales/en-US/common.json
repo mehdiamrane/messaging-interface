@@ -50,6 +50,7 @@
       "description": "Browse and send messages to {{name}} on Leboncoin."
     },
     "emptyText": "You haven't sent any messages to {{name}} yet. Don't be shy, say hello!",
+    "loadingText": "Loading...",
     "header": {
       "lastMessageTimestamp": {
         "text": "Last message {{date}}",
