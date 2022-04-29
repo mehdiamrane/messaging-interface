@@ -13,7 +13,12 @@ const StyledListHeader = styled(StretchedBox.Header)`
   `}
 `;
 
-const StyledListInner = styled(StretchedBox.Inner)``;
+const StyledListInner = styled(StretchedBox.Inner)`
+  ${({ theme }) => css`
+    border-bottom-left-radius: ${theme.radii.lg};
+    border-bottom-right-radius: ${theme.radii.lg};
+  `}
+`;
 
 const StyledListFooter = styled(StretchedBox.Footer).attrs({ as: 'a' })`
   ${({ theme }) => css`

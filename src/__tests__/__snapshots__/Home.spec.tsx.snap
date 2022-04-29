@@ -6,7 +6,7 @@ exports[`Home should render correctly Home 1`] = `
   width: 100%;
 }
 
-.c7 {
+.c6 {
   display: none;
 }
 
@@ -61,61 +61,18 @@ exports[`Home should render correctly Home 1`] = `
   width: 100%;
 }
 
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #E2E8F0;
-  border: 1px solid #CBD5E0;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 4rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-}
-
 .c3 span {
   color: #1A202C;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
-.c6 {
-  background-color: #bee3f8;
-  cursor: pointer;
-  -webkit-transition: border 150ms ease,background-color 150ms ease;
-  transition: border 150ms ease,background-color 150ms ease;
+.c5 {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
-.c6:hover {
-  background-color: #90cdf4;
-  border: 1px solid #63b3ed;
-}
-
-.c6:active {
-  background-color: #bee3f8;
-  border: 1px solid #90cdf4;
-}
-
-.c6 span {
-  color: #1A365D;
-  font-size: 1.125rem;
-  font-weight: 600;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c8 {
+.c7 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -132,7 +89,7 @@ exports[`Home should render correctly Home 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c8 {
   background-color: rgba(0,0,0,0.04);
   border: 2px solid rgba(0,0,0,0.24);
   border-radius: 0.5rem;
@@ -162,7 +119,7 @@ exports[`Home should render correctly Home 1`] = `
 }
 
 @media (min-width:48em) {
-  .c7 {
+  .c6 {
     display: initial;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -186,26 +143,18 @@ exports[`Home should render correctly Home 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c4 c5"
       />
-      <a
-        class="c5 c6"
-        title="list.footer.title"
-      >
-        <span>
-          list.footer.text
-        </span>
-      </a>
     </div>
   </aside>
   <main
-    class="c7"
+    class="c6"
   >
     <div
-      class="c8"
+      class="c7"
     >
       <div
-        class="c9"
+        class="c8"
       >
         index.explainerText
       </div>

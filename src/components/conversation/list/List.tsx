@@ -25,9 +25,6 @@ const List: FC<ListProps> = ({ conversations }) => {
           <ListItem conversation={conversation} key={conversation.id} />
         ))}
       </StyledList.Inner>
-      <StyledList.Footer title={t('list.footer.title')}>
-        <span>{t('list.footer.text')}</span>
-      </StyledList.Footer>
     </StyledList.Container>
   );
 };

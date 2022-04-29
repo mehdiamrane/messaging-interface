@@ -5,7 +5,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   display: none;
 }
 
-.c13 {
+.c12 {
   display: initial;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -63,7 +63,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   width: 100%;
 }
 
-.c11 {
+.c24 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -90,34 +90,12 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   font-weight: 600;
 }
 
-.c12 {
-  background-color: #bee3f8;
-  cursor: pointer;
-  -webkit-transition: border 150ms ease,background-color 150ms ease;
-  transition: border 150ms ease,background-color 150ms ease;
+.c5 {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
-.c12:hover {
-  background-color: #90cdf4;
-  border: 1px solid #63b3ed;
-}
-
-.c12:active {
-  background-color: #bee3f8;
-  border: 1px solid #90cdf4;
-}
-
-.c12 span {
-  color: #1A365D;
-  font-size: 1.125rem;
-  font-weight: 600;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c6 {
+.c7 {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -139,7 +117,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   color: #4A5568;
   font-size: 1rem;
   font-weight: 500;
@@ -147,12 +125,12 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   transition: color 150ms ease;
 }
 
-.c10 {
+.c11 {
   color: #718096;
   font-size: 0.875rem;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -177,25 +155,25 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   user-select: none;
 }
 
-.c5:hover {
+.c6:hover {
   background-color: #bee3f8;
 }
 
-.c5:hover .c7,
-.c5:hover .c9 {
+.c6:hover .c8,
+.c6:hover .c10 {
   color: #2b6cb0;
 }
 
-.c5:active {
+.c6:active {
   background-color: #ebf8ff;
 }
 
-.c5:active .c7,
-.c5:active .c9 {
+.c6:active .c8,
+.c6:active .c10 {
   color: #4299e1;
 }
 
-.c14 {
+.c13 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -208,13 +186,13 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   position: relative;
 }
 
-.c16 {
+.c15 {
   color: #1A202C;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
-.c15 {
+.c14 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -241,25 +219,25 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   transition: background-color 150ms ease,color 150ms ease;
 }
 
-.c15:hover {
+.c14:hover {
   background-color: #90cdf4;
   border: 1px solid #63b3ed;
   color: #1A365D;
 }
 
-.c15:active {
+.c14:active {
   background-color: #bee3f8;
   border: 1px solid #90cdf4;
   color: #2c5282;
 }
 
-.c17 {
+.c16 {
   color: #718096;
   font-size: 1rem;
   font-weight: 500;
 }
 
-.c18 {
+.c17 {
   background-color: #E2E8F0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -271,7 +249,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   padding: 1rem;
 }
 
-.c19 {
+.c18 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -290,7 +268,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   margin-left: 2rem;
 }
 
-.c22 {
+.c21 {
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -310,7 +288,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   margin-top: 0.25rem;
 }
 
-.c24 {
+.c23 {
   color: #718096;
   font-size: 0.875rem;
   font-weight: 400;
@@ -413,7 +391,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   display: none;
 }
 
-.c20 {
+.c19 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -437,7 +415,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   max-width: 28rem;
 }
 
-.c23 {
+.c22 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -461,7 +439,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
   max-width: 28rem;
 }
 
-.c21 {
+.c20 {
   word-break: break-word;
 }
 
@@ -482,7 +460,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
 }
 
 @media (min-width:48em) {
-  .c13 {
+  .c12 {
     display: initial;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -492,7 +470,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
 }
 
 @media (min-width:48em) {
-  .c14 {
+  .c13 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -504,7 +482,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
 }
 
 @media (min-width:48em) {
-  .c15 {
+  .c14 {
     display: none;
   }
 }
@@ -531,10 +509,10 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c4 c5"
       >
         <a
-          class="c5"
+          class="c6"
           title="list.item.title"
         >
           <span
@@ -561,22 +539,22 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
             <noscript />
           </span>
           <div
-            class="c6"
+            class="c7"
           >
             <span
-              class="c7 c8"
+              class="c8 c9"
             >
               Elodie
             </span>
             <span
-              class="c7 c9 c8 c10"
+              class="c8 c10 c9 c11"
             >
               10 months ago
             </span>
           </div>
         </a>
         <a
-          class="c5"
+          class="c6"
           title="list.item.title"
         >
           <span
@@ -603,42 +581,34 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
             <noscript />
           </span>
           <div
-            class="c6"
+            class="c7"
           >
             <span
-              class="c7 c8"
+              class="c8 c9"
             >
               Jeremie
             </span>
             <span
-              class="c7 c9 c8 c10"
+              class="c8 c10 c9 c11"
             >
               10 months ago
             </span>
           </div>
         </a>
       </div>
-      <a
-        class="c11 c12"
-        title="list.footer.title"
-      >
-        <span>
-          list.footer.text
-        </span>
-      </a>
     </div>
   </aside>
   <main
-    class="c13"
+    class="c12"
   >
     <div
       class="c1"
     >
       <div
-        class="c2 c14"
+        class="c2 c13"
       >
         <a
-          class="c15"
+          class="c14"
           title="conversation.header.backButton.title"
         >
           <svg
@@ -659,51 +629,51 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
           </svg>
         </a>
         <span
-          class="c16"
+          class="c15"
         >
           Elodie
         </span>
         <span
-          class="c17"
+          class="c16"
           title="conversation.header.lastMessageTimestamp.title"
         >
           conversation.header.lastMessageTimestamp.text
         </span>
       </div>
       <div
-        class="c4 c18"
+        class="c4 c17"
       >
         <div
-          class="c19"
+          class="c18"
           title="Wednesday, July 7, 2021, 8:04 AM"
         >
           <div
-            class="c20"
+            class="c19"
             data-testid="chat-bubble"
           >
             <span
-              class="c21"
+              class="c20"
             >
               Bonjour c'est le premier message de la première conversation
             </span>
           </div>
         </div>
         <div
-          class="c22"
+          class="c21"
           title="Wednesday, July 7, 2021, 8:04 AM"
         >
           <div
-            class="c23"
+            class="c22"
             data-testid="chat-bubble"
           >
             <span
-              class="c21"
+              class="c20"
             >
               Bonjour c'est le second message de la première conversation
             </span>
           </div>
           <span
-            class="c24"
+            class="c23"
           >
             Wednesday, July 7, 2021, 8:04 AM
           </span>
@@ -711,7 +681,7 @@ exports[`ConversationPage should render correctly the Conversation Page 1`] = `
         <div />
       </div>
       <div
-        class="c11 c25"
+        class="c24 c25"
       >
         <form
           class="c26"
